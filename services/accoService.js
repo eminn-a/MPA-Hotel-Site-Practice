@@ -29,7 +29,9 @@ async function create(roomData) {
     name: roomData.name,
     description: roomData.description,
     price: Number(roomData.price),
+    imgUrl: roomData.imgUrl,
   };
+  console.log(roomData);
   data.push(room);
   await presist();
   return room;

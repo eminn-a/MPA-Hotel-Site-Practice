@@ -1,1 +1,1 @@
-[{"id":"1234","name":"Room","description":"Nice and cozy","price":130},{"id":"009972","name":"Room 2 ","description":"nice too","price":180},{"id":"060137","name":"Room 3","description":"nice 3","price":1500},{"id":"08540c","name":"","description":"","price":0}]
+[{"id":"1234","name":"Room","description":"Nice and cozy","price":130,"imgUrl":"/static/img/room1.jpg"},{"id":"020670","name":"Room 2 ","description":"Heavenly","price":250,"imgUrl":"/static/img/room2.jpg"}]
