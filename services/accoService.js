@@ -23,7 +23,24 @@ function getById(id) {
   return data.find((x) => x.id == id);
 }
 
+async function create(roomData) {
+  const room = {
+    id: getId(),
+    name: roomData.name,
+    description: roomData.description,
+    price: Number(roomData.price),
+  };
+  data.push(room);
+  await presist();
+  return room;
+}
+
+function getId() {
+  return ("00000" + ((Math.random() * 999999) | 0).toString(16)).slice(-6);
+}
+
 module.exports = {
   getAll,
   getById,
+  create,
 };
