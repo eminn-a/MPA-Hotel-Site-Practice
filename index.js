@@ -13,7 +13,7 @@ app.engine(".hbs", hbs.engine);
 app.set("view engine", ".hbs");
 
 app.use(express.urlencoded({ extended: true }));
-app.use("/", express.static("static"));
+app.use("/static", express.static("static"));
 
 app.use(defaultTitle("SoftUni Project"));
 
