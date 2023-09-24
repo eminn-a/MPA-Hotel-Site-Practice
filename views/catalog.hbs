@@ -1,2 +1,11 @@
-<h1>Catalog Nesrin page</h1>
+<section>
+<h1>Catalog page</h1>
 <p>Chose whatever u want </p>
+<main>
+    <ul>
+        {{#each rooms}}
+        {{> roomCard}}
+        {{/each}}
+    </ul>
+</main>
+</section>

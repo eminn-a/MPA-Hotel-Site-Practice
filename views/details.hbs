@@ -1,1 +1,9 @@
-<h1>Details</h1>
+
+{{#with room}}
+
+<h1>Details for {{name}}</h1>
+<p>Description: {{description}}</p>
+<p>Price per night: ${{price}}</p>
+<a href="/catalog">Return to Catalog!</a>
+
+{{/with}}
